@@ -86,11 +86,11 @@ const Services = () => {
           {services.map((service, index) => (
             <AnimatedTitle key={index}>
               <div 
-                className="bg-white p-8 border-4 border-[#162d7a] shadow-[8px_8px_0px_0px_#162d7a] hover:shadow-[12px_12px_0px_0px_#162d7a] hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300"
+                className="bg-white p-8 border-4 border-[#162d7a] shadow-[8px_8px_0px_0px_#162d7a] hover:shadow-[12px_12px_0px_0px_#162d7a] hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 h-full flex flex-col"
               >
                 <div className="text-[#52b82f] mb-6">{service.icon}</div>
                 <h3 className="text-2xl font-black text-[#162d7a] mb-4">{service.title}</h3>
-                <p className="text-[#162d7a]/80">{service.description}</p>
+                <p className="text-[#162d7a]/80 flex-grow">{service.description}</p>
               </div>
             </AnimatedTitle>
           ))}

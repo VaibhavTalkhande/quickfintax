@@ -73,10 +73,10 @@ const Hero = () => {
           ].map((item, index) => (
             <AnimatedTitle key={index}>
               <div 
-                className="bg-white p-6 border-4 border-[#162d7a] shadow-[8px_8px_0px_0px_#162d7a] hover:shadow-[12px_12px_0px_0px_#162d7a] hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300"
+                className="bg-white h-full p-6 border-4 border-[#162d7a] shadow-[8px_8px_0px_0px_#162d7a] hover:shadow-[12px_12px_0px_0px_#162d7a] hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="text-3xl sm:text-4xl font-black text-[#52b82f] mb-2">{item.number}</div>
-                <div className="text-[#162d7a] font-black">{item.label}</div>
+                <div className="text-[#162d7a] font-black flex-grow">{item.label}</div>
               </div>
             </AnimatedTitle>
           ))}

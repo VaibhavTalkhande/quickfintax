@@ -16,7 +16,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <a href="/" className="flex items-center group">
-              <img src={logo} alt="QuickFintax Logo" className="h-24 lg:h-50 w-auto object-contain transform group-hover:scale-105 transition-transform duration-300" />
+              <img src={logo} alt="QuickFintax Logo" className="h-32 lg:h-52 w-auto object-contain transform group-hover:scale-105 transition-transform duration-300" />
             </a>
 
             {/* Desktop Navigation */}

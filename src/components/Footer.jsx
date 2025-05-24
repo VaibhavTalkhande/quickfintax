@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <img src={logo} alt="QuickFintax Logo" className="h-24 lg:h-40 w-auto" />
+            <img src={logo} alt="QuickFintax Logo" className="h-40 lg:h-40 w-auto" />
             <p className="text-[#162d7a]/80">
               Your trusted partner in financial excellence, providing comprehensive solutions for businesses of all sizes.
             </p>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="48" fill="#162d7a"/>
+  
+  <!-- Stylized Q -->
+  <path d="M35 35C35 25 45 25 50 25C55 25 65 25 65 35C65 45 55 45 50 45C45 45 35 45 35 35Z" stroke="#52b82f" stroke-width="4" fill="none"/>
+  <path d="M35 35L45 65" stroke="#52b82f" stroke-width="4"/>
+  
+  <!-- Dollar Sign -->
+  <path d="M50 20V80" stroke="white" stroke-width="4"/>
+  <path d="M40 30H60" stroke="white" stroke-width="4"/>
+  <path d="M40 70H60" stroke="white" stroke-width="4"/>
+  
+  <!-- Financial Graph Elements -->
+  <path d="M70 40L75 35L80 45L85 30" stroke="#52b82f" stroke-width="2" fill="none"/>
+  <circle cx="75" cy="35" r="2" fill="#52b82f"/>
+  <circle cx="80" cy="45" r="2" fill="#52b82f"/>
+  <circle cx="85" cy="30" r="2" fill="#52b82f"/>
+</svg>
+ 

@@ -4,46 +4,39 @@ import AnimatedTitle from './AnimatedTitle';
 const Reviews = () => {
   const reviews = [
     {
-      name: "Sarah Johnson",
-      role: "CEO, TechStart Inc.",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80",
+      name: "Nikhil Padia",
       rating: 5,
       review: "QuickFinTax has transformed our financial management. Their expertise in tax planning and business development has been invaluable to our growth."
     },
     {
-      name: "Michael Chen",
-      role: "Founder, Global Solutions",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80",
+      name: "Rahul Patel",
       rating: 5,
       review: "The team's attention to detail and proactive approach to financial planning has helped us navigate complex international markets successfully."
     },
     {
-      name: "Emily Rodriguez",
-      role: "Director, Creative Studios",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80",
+      name: "Rohit Sawarkar",
       rating: 5,
       review: "Their business funding solutions helped us secure the capital we needed to expand our operations. Professional and efficient service!"
     },
     {
-      name: "David Kim",
-      role: "CFO, Innovation Labs",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80",
+      name: "OMG Rentals",
       rating: 5,
       review: "The accounting and auditing services are top-notch. They've helped us maintain compliance while optimizing our financial processes."
     },
     {
-      name: "Lisa Wang",
-      role: "Managing Director, Growth Ventures",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80",
+      name: "Rounak Dalmia",
       rating: 5,
       review: "Their global advisory services have been instrumental in our international expansion. The team's expertise in cross-border transactions is exceptional."
     },
     {
-      name: "James Wilson",
-      role: "CEO, Innovation Hub",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80",
+      name: "Krishna Dangra",
       rating: 5,
       review: "The project finance team helped us secure funding for our new venture. Their strategic approach and industry knowledge made all the difference."
+    },
+    {
+      name: "Nishant Harsh",
+      rating: 5,
+      review: "QuickFinTax has been an invaluable partner in our business journey. Their expertise in financial management and tax planning has helped us achieve remarkable growth."
     }
   ];
 
@@ -137,11 +130,11 @@ const Reviews = () => {
                         >
                           <div className="flex items-center mb-4 sm:mb-6">
                             <div className="relative">
-                              <img 
-                                src={review.image} 
-                                alt={review.name}
-                                className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full object-cover border-4 border-[#52b82f]"
-                              />
+                              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-[#162d7a]/10 flex items-center justify-center border-4 border-[#52b82f]">
+                                <svg className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-[#162d7a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                </svg>
+                              </div>
                               <div className="absolute -bottom-1 -right-1 w-5 h-5 sm:w-6 sm:h-6 bg-[#52b82f] rounded-full flex items-center justify-center">
                                 <svg className="w-3 h-3 sm:w-4 sm:h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                                   <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
@@ -150,7 +143,6 @@ const Reviews = () => {
                             </div>
                             <div className="ml-3 sm:ml-4">
                               <h3 className="text-lg sm:text-xl font-black text-[#162d7a] leading-tight">{review.name}</h3>
-                              <p className="text-sm sm:text-base text-[#162d7a]/80 font-medium">{review.role}</p>
                             </div>
                           </div>
                           <div className="flex mb-3 sm:mb-4">
@@ -165,7 +157,7 @@ const Reviews = () => {
                               </svg>
                             ))}
                           </div>
-                          <p className="text-base sm:text-lg text-[#162d7a]/80 italic flex-grow line-clamp-4 sm:line-clamp-5">"{review.review}"</p>
+                          <p className="text-sm sm:text-base text-[#162d7a]/80 italic flex-grow line-clamp-3 sm:line-clamp-4 md:line-clamp-5">"{review.review}"</p>
                           <div className="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t-2 border-[#162d7a]/10">
                             <div className="flex items-center justify-between">
                               <span className="text-sm sm:text-base text-[#52b82f] font-bold">Verified Client</span>
